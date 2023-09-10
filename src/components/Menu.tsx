@@ -18,7 +18,7 @@ export default function Menu() {
 
   const user = false;
   return (
-    <div>
+    <div className="z-50">
       {!open ? (
         <Bars3Icon
           onClick={() => setOpen(true)}
@@ -31,7 +31,7 @@ export default function Menu() {
         />
       )}
       {open && (
-        <div className="bg-emerald-500 text-white absolute left-0 gap-8 top-24 w-full flex flex-col items-center justify-center text-3xl py-2">
+        <div className="bg-emerald-500 z-50 text-white absolute left-0 gap-8 top-24 w-full flex flex-col items-center justify-center text-3xl py-2">
           {links.map((item) => (
             <Link key={item.id} href={item.url} onClick={() => setOpen(false)}>
               {item.title}
