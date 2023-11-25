@@ -3,7 +3,7 @@
 import React from "react";
 import Countdown from "react-countdown";
 
-const endingDate = new Date("2023-09-25");
+const endingDate = new Date("2024-09-25");
 
 export default function CountDown() {
   return (
